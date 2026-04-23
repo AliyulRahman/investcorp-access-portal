@@ -1,0 +1,177 @@
+[
+  {
+    "id": "req001",
+    "requestorId": "emp004",
+    "applicationId": "app001",
+    "roleId": "r002",
+    "businessJustification": "Need Bloomberg Terminal access for daily market analysis and financial modeling as part of my Finance Analyst role.",
+    "requestedDate": "2024-03-10T09:00:00Z",
+    "status": "pending_manager",
+    "approvals": [
+      {
+        "step": 1,
+        "approverRole": "manager",
+        "approverId": null,
+        "action": null,
+        "date": null,
+        "comments": ""
+      },
+      {
+        "step": 2,
+        "approverRole": "app_owner",
+        "approverId": null,
+        "action": null,
+        "date": null,
+        "comments": ""
+      },
+      {
+        "step": 3,
+        "approverRole": "it_security",
+        "approverId": null,
+        "action": null,
+        "date": null,
+        "comments": ""
+      }
+    ]
+  },
+  {
+    "id": "req002",
+    "requestorId": "emp005",
+    "applicationId": "app002",
+    "roleId": "r005",
+    "businessJustification": "Require Salesforce CRM access to manage client relationships and track sales pipeline as a new Sales Associate.",
+    "requestedDate": "2024-03-08T10:30:00Z",
+    "status": "pending_app_owner",
+    "approvals": [
+      {
+        "step": 1,
+        "approverRole": "manager",
+        "approverId": "emp002",
+        "action": "approved",
+        "date": "2024-03-09T14:00:00Z",
+        "comments": "Approved. Amanda needs CRM access for her sales role."
+      },
+      {
+        "step": 2,
+        "approverRole": "app_owner",
+        "approverId": null,
+        "action": null,
+        "date": null,
+        "comments": ""
+      },
+      {
+        "step": 3,
+        "approverRole": "it_security",
+        "approverId": null,
+        "action": null,
+        "date": null,
+        "comments": ""
+      }
+    ]
+  },
+  {
+    "id": "req003",
+    "requestorId": "emp004",
+    "applicationId": "app003",
+    "roleId": "r009",
+    "businessJustification": "Need SAP Finance access to process monthly financial transactions and maintain accounts for the Finance department.",
+    "requestedDate": "2024-03-05T08:00:00Z",
+    "status": "approved",
+    "approvals": [
+      {
+        "step": 1,
+        "approverRole": "manager",
+        "approverId": "emp002",
+        "action": "approved",
+        "date": "2024-03-06T09:00:00Z",
+        "comments": "Approved for finance role requirements."
+      },
+      {
+        "step": 2,
+        "approverRole": "app_owner",
+        "approverId": "emp006",
+        "action": "approved",
+        "date": "2024-03-07T11:00:00Z",
+        "comments": "Accountant role is appropriate for this position."
+      },
+      {
+        "step": 3,
+        "approverRole": "it_security",
+        "approverId": "emp001",
+        "action": "approved",
+        "date": "2024-03-08T10:00:00Z",
+        "comments": "Security review completed. Access granted."
+      }
+    ]
+  },
+  {
+    "id": "req004",
+    "requestorId": "emp005",
+    "applicationId": "app005",
+    "roleId": "r014",
+    "businessJustification": "Need Tableau Viewer access to review sales performance dashboards and share insights with the team.",
+    "requestedDate": "2024-03-12T11:00:00Z",
+    "status": "approved",
+    "approvals": [
+      {
+        "step": 1,
+        "approverRole": "manager",
+        "approverId": "emp002",
+        "action": "approved",
+        "date": "2024-03-13T09:00:00Z",
+        "comments": "Approved."
+      },
+      {
+        "step": 2,
+        "approverRole": "app_owner",
+        "approverId": "emp007",
+        "action": "approved",
+        "date": "2024-03-14T10:00:00Z",
+        "comments": "Viewer access is standard for sales team."
+      },
+      {
+        "step": 3,
+        "approverRole": "it_security",
+        "approverId": "emp001",
+        "action": "approved",
+        "date": "2026-04-21T12:29:38.411Z",
+        "comments": ""
+      }
+    ]
+  },
+  {
+    "id": "req005",
+    "requestorId": "emp001",
+    "applicationId": "app001",
+    "roleId": "r001",
+    "businessJustification": "Test Request for testing",
+    "requestedDate": "2026-04-21T12:30:56.279Z",
+    "status": "pending_it_security",
+    "approvals": [
+      {
+        "step": 1,
+        "approverRole": "manager",
+        "approverId": "emp006",
+        "action": "approved",
+        "date": "2026-04-21T12:31:32.662Z",
+        "comments": ""
+      },
+      {
+        "step": 2,
+        "approverRole": "app_owner",
+        "approverId": "emp003",
+        "action": "approved",
+        "date": "2026-04-21T12:31:53.824Z",
+        "comments": ""
+      },
+      {
+        "step": 3,
+        "approverRole": "it_security",
+        "approverId": null,
+        "action": null,
+        "date": null,
+        "comments": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  { "id": "r001", "applicationId": "app001", "name": "Read Only", "description": "View market data and reports without trading capabilities", "status": "active" },
+  { "id": "r002", "applicationId": "app001", "name": "Standard User", "description": "Full access to Bloomberg data and standard analytics", "status": "active" },
+  { "id": "r003", "applicationId": "app001", "name": "Power User", "description": "Advanced analytics, custom screens, and API access", "status": "active" },
+  { "id": "r004", "applicationId": "app001", "name": "Administrator", "description": "Full administrative control including user management", "status": "active" },
+  { "id": "r005", "applicationId": "app002", "name": "Sales Representative", "description": "Manage contacts, leads, and opportunities", "status": "active" },
+  { "id": "r006", "applicationId": "app002", "name": "Sales Manager", "description": "Team management, forecasting, and reporting", "status": "active" },
+  { "id": "r007", "applicationId": "app002", "name": "System Administrator", "description": "Full Salesforce administrative access", "status": "active" },
+  { "id": "r008", "applicationId": "app003", "name": "Viewer", "description": "Read-only access to financial reports", "status": "active" },
+  { "id": "r009", "applicationId": "app003", "name": "Accountant", "description": "Process transactions and maintain accounts", "status": "active" },
+  { "id": "r010", "applicationId": "app003", "name": "Finance Manager", "description": "Full financial management and approval authority", "status": "active" },
+  { "id": "r011", "applicationId": "app004", "name": "E1 License", "description": "Basic Office apps and email (web only)", "status": "active" },
+  { "id": "r012", "applicationId": "app004", "name": "E3 License", "description": "Full Office suite with Teams, SharePoint, and compliance", "status": "active" },
+  { "id": "r013", "applicationId": "app004", "name": "E5 License", "description": "E3 plus advanced security, compliance, and analytics", "status": "active" },
+  { "id": "r014", "applicationId": "app005", "name": "Viewer", "description": "View and interact with published dashboards", "status": "active" },
+  { "id": "r015", "applicationId": "app005", "name": "Creator", "description": "Create and publish workbooks and dashboards", "status": "active" },
+  { "id": "r016", "applicationId": "app005", "name": "Administrator", "description": "Full server administration and user management", "status": "active" }
+]

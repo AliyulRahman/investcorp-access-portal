@@ -1,0 +1,126 @@
+[
+  {
+    "id": "emp001",
+    "firstName": "Sarah",
+    "lastName": "Mitchell",
+    "email": "sarah.mitchell@investcorp.com",
+    "department": "IT Security",
+    "title": "Head of IT Security",
+    "managerId": "emp006",
+    "systemRoles": [
+      "it_security",
+      "admin"
+    ],
+    "status": "active",
+    "joiningDate": "2019-03-15",
+    "phone": "+1-212-555-0101"
+  },
+  {
+    "id": "emp002",
+    "firstName": "Michael",
+    "lastName": "Thompson",
+    "email": "michael.thompson@investcorp.com",
+    "department": "Technology",
+    "title": "Technology Manager",
+    "managerId": "emp006",
+    "systemRoles": [
+      "manager"
+    ],
+    "status": "active",
+    "joiningDate": "2018-06-01",
+    "phone": "+1-212-555-0102"
+  },
+  {
+    "id": "emp003",
+    "firstName": "Jennifer",
+    "lastName": "Patel",
+    "email": "jennifer.patel@investcorp.com",
+    "department": "Technology",
+    "title": "Bloomberg Application Owner",
+    "managerId": "emp002",
+    "systemRoles": [
+      "app_owner",
+      "employee"
+    ],
+    "status": "active",
+    "joiningDate": "2020-09-01",
+    "phone": "+1-212-555-0103"
+  },
+  {
+    "id": "emp004",
+    "firstName": "Robert",
+    "lastName": "Chen",
+    "email": "robert.chen@investcorp.com",
+    "department": "Finance",
+    "title": "Finance Analyst",
+    "managerId": "emp002",
+    "systemRoles": [
+      "employee"
+    ],
+    "status": "active",
+    "joiningDate": "2024-01-15",
+    "phone": "+1-212-555-0104"
+  },
+  {
+    "id": "emp005",
+    "firstName": "Amanda",
+    "lastName": "Rodriguez",
+    "email": "amanda.rodriguez@investcorp.com",
+    "department": "Sales",
+    "title": "Sales Associate",
+    "managerId": "emp002",
+    "systemRoles": [
+      "employee"
+    ],
+    "status": "active",
+    "joiningDate": "2024-02-01",
+    "phone": "+1-212-555-0105"
+  },
+  {
+    "id": "emp006",
+    "firstName": "David",
+    "lastName": "Hartman",
+    "email": "david.hartman@investcorp.com",
+    "department": "Executive",
+    "title": "Chief Technology Officer",
+    "managerId": null,
+    "systemRoles": [
+      "manager",
+      "admin"
+    ],
+    "status": "active",
+    "joiningDate": "2015-01-10",
+    "phone": "+1-212-555-0106"
+  },
+  {
+    "id": "emp007",
+    "firstName": "Lisa",
+    "lastName": "Wang",
+    "email": "lisa.wang@investcorp.com",
+    "department": "Sales",
+    "title": "Salesforce & Tableau App Owner",
+    "managerId": "emp006",
+    "systemRoles": [
+      "app_owner",
+      "employee"
+    ],
+    "status": "active",
+    "joiningDate": "2021-04-15",
+    "phone": "+1-212-555-0107"
+  },
+  {
+    "id": "emp008",
+    "firstName": "James",
+    "lastName": "Okafor",
+    "email": "james.okafor@investcorp.com",
+    "department": "IT Security",
+    "title": "IT Security Analyst",
+    "managerId": "emp001",
+    "systemRoles": [
+      "it_security"
+    ],
+    "status": "active",
+    "joiningDate": "2022-07-01",
+    "phone": "+1-212-555-0108"
+  }
+]

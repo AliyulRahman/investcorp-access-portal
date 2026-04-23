@@ -1,0 +1,47 @@
+[
+  {
+    "id": "app001",
+    "name": "Bloomberg Terminal",
+    "description": "Professional financial data and analytics platform for market data, news, and trading",
+    "ownerId": "emp003",
+    "status": "active",
+    "category": "Financial Data",
+    "createdDate": "2023-01-01"
+  },
+  {
+    "id": "app002",
+    "name": "Salesforce CRM",
+    "description": "Customer relationship management platform for sales and client management",
+    "ownerId": "emp007",
+    "status": "active",
+    "category": "CRM",
+    "createdDate": "2023-01-01"
+  },
+  {
+    "id": "app003",
+    "name": "SAP Finance",
+    "description": "Enterprise resource planning system for financial management and reporting",
+    "ownerId": "emp006",
+    "status": "active",
+    "category": "ERP",
+    "createdDate": "2023-01-01"
+  },
+  {
+    "id": "app004",
+    "name": "Microsoft Office 365",
+    "description": "Productivity suite including email, document management, and collaboration tools",
+    "ownerId": "emp003",
+    "status": "active",
+    "category": "Productivity",
+    "createdDate": "2023-01-01"
+  },
+  {
+    "id": "app005",
+    "name": "Tableau Analytics",
+    "description": "Business intelligence and data visualization platform for reporting",
+    "ownerId": "emp007",
+    "status": "active",
+    "category": "Analytics",
+    "createdDate": "2023-01-01"
+  }
+]
