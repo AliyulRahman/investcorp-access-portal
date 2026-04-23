@@ -13,6 +13,6 @@
   { "id": "r012", "applicationId": "app004", "name": "E3 License", "description": "Full Office suite with Teams, SharePoint, and compliance", "status": "active" },
   { "id": "r013", "applicationId": "app004", "name": "E5 License", "description": "E3 plus advanced security, compliance, and analytics", "status": "active" },
   { "id": "r014", "applicationId": "app005", "name": "Viewer", "description": "View and interact with published dashboards", "status": "active" },
-  { "id": "r015", "applicationId": "app005", "name": "Creator", "description": "Create and publish workbooks and dashboards", "status": "active" },
+  { "id": "r015", "applicationId": "app005", "name": "Creator", "description": "Create and publish workbooks & dashboards", "status": "active" },
   { "id": "r016", "applicationId": "app005", "name": "Administrator", "description": "Full server administration and user management", "status": "active" }
 ]
