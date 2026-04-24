@@ -1,5 +1,6 @@
 const express = require('express');
 const { sql, getPool } = require('../db/connection');
+const { notifyNewRequest, notifyApprovalAction } = require('../utils/email');
 
 const router = express.Router();
 
@@ -175,6 +176,8 @@ router.post('/', async (req, res) => {
       throw err;
     }
 
+    notifyNewRequest(pool, { requestorId, applicationId, roleId, businessJustification });
+
     res.status(201).json({
       id: newId, requestorId, applicationId, roleId, businessJustification,
       requestedDate: now.toISOString(),
@@ -258,7 +261,18 @@ router.post('/:id/approve', async (req, res) => {
     ]);
 
     const steps = updatedSteps.recordset.map(s => ({ ...s, RequestId: req.params.id }));
-    res.json(mapRequest(updatedReq.recordset[0], steps));
+    const response = mapRequest(updatedReq.recordset[0], steps);
+
+    notifyApprovalAction(pool, {
+      requestorId:           dbReq.RequestorId,
+      applicationId:         dbReq.ApplicationId,
+      roleId:                dbReq.RoleId,
+      businessJustification: dbReq.BusinessJustification,
+      newStatus,
+      comments
+    });
+
+    res.json(response);
   } catch (err) {
     console.error('[accessRequests POST /:id/approve]', err.message);
     res.status(500).json({ error: 'Database error' });
