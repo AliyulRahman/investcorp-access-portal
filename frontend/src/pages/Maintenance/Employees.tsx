@@ -207,6 +207,7 @@ export default function Employees() {
   const [search, setSearch] = useState('')
   const [filterDept, setFilterDept] = useState('')
   const [filterStatus, setFilterStatus] = useState<RecordStatus | ''>('active')
+  const [filterManager, setFilterManager] = useState('')
 
   const load = () => {
     setLoading(true)
@@ -237,10 +238,13 @@ export default function Employees() {
     if (search && !name.includes(search.toLowerCase())) return false
     if (filterDept && e.department !== filterDept) return false
     if (filterStatus && e.status !== filterStatus) return false
+    if (filterManager && e.managerId !== filterManager) return false
     return true
   })
 
   const departments = [...new Set(employees.map(e => e.department))].sort()
+  const managerOptions = employees.filter(e => employees.some(emp => emp.managerId === e.id))
+    .sort((a, b) => `${a.firstName} ${a.lastName}`.localeCompare(`${b.firstName} ${b.lastName}`))
 
   if (loading) return <div className="loading-overlay"><div className="spinner spinner-dark"></div></div>
 
@@ -272,6 +276,12 @@ export default function Employees() {
             <select value={filterDept} onChange={e => setFilterDept(e.target.value)}>
               <option value="">All Departments</option>
               {departments.map(d => <option key={d} value={d}>{d}</option>)}
+            </select>
+            <select value={filterManager} onChange={e => setFilterManager(e.target.value)}>
+              <option value="">All Managers</option>
+              {managerOptions.map(m => (
+                <option key={m.id} value={m.id}>{m.firstName} {m.lastName}</option>
+              ))}
             </select>
             <select
               value={filterStatus}
